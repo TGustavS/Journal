@@ -275,3 +275,32 @@ hr {
   h1 { font-size: 1.6em; }
   h2 { font-size: 1.35em; }
 }
+
+
+
+
+/* Images: never wider than the screen, centered on wide displays */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Figures (images with #+CAPTION become <figure>) */
+figure {
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+figure img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: var(--muted);
+  margin-top: 0.4em;
+}
